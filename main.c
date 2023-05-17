@@ -96,6 +96,20 @@ void permainan(){
     strcpy(pertanyaan[2].pilihanD, "Suriname");
     pertanyaan[2].jawaban = 'C';
     
+    strcpy(pertanyaan[3].soal, "Siapakah pemenang SEA GAMES cabang sepak bola tahun 2023?");
+    strcpy(pertanyaan[3].pilihanA, "Kamboja");
+    strcpy(pertanyaan[3].pilihanB, "thailand");
+    strcpy(pertanyaan[3].pilihanC, "Malaysia");
+    strcpy(pertanyaan[3].pilihanD, "Indonesia");
+    pertanyaan[3].jawaban = 'D';
+    
+    strcpy(pertanyaan[4].soal, "Siapakah yang menciptakan bahasa c?");
+    strcpy(pertanyaan[4].pilihanA, "Dennis Ritchie");
+    strcpy(pertanyaan[4].pilihanB, "James Gosling");
+    strcpy(pertanyaan[4].pilihanC, "Guido van Rossum");
+    strcpy(pertanyaan[4].pilihanD, "Bjarne Stroustrup");
+    pertanyaan[4].jawaban = 'A';
+    
 int main(int argc, char *argv[]){
     char *filename = "database/login.bin";
     if (argc == 1)
