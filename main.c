@@ -59,6 +59,20 @@ void login(char *filename, char *username, char *password){
     }
 }
 
+void permainan(){
+    #define kata2_soal 100
+    #define kata2_pilihan 100
+    #define total_soal 5
+    typedef struct 
+    {
+        char soal[kata2_soal];
+        char pilihanA[kata2_pilihan];
+        char pilihanB[kata2_pilihan];
+        char pilihanC[kata2_pilihan];
+        char pilihanD[kata2_pilihan];
+        char jawaban;
+    } quiz;
+    
 int main(int argc, char *argv[]){
     char *filename = "database/login.bin";
     if (argc == 1)
