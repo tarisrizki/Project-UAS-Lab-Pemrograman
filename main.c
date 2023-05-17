@@ -73,6 +73,15 @@ void permainan(){
         char jawaban;
     } quiz;
     
+    printf("MARI MULAI PERMAINANNYA\n\n");
+    quiz pertanyaan[total_soal];
+    strcpy(pertanyaan[0].soal, "Apakah ibu kota India?");
+    strcpy(pertanyaan[0].pilihanA, "Dubai");
+    strcpy(pertanyaan[0].pilihanB, "Mumbai");
+    strcpy(pertanyaan[0].pilihanC, "Newdelhi");
+    strcpy(pertanyaan[0].pilihanD, "Bangkok");
+    pertanyaan[0].jawaban = 'C';
+    
 int main(int argc, char *argv[]){
     char *filename = "database/login.bin";
     if (argc == 1)
