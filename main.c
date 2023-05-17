@@ -43,6 +43,22 @@ void login(char *filename, char *username, char *password){
         printf("Gagal membuka file!");
         exit(1);
     }
+    pemain player;
+    fread(&player, sizeof(player), 1, fpr);
+    fclose(fpr);
+
+    if(strcmp(player.username, username) == 0 && strcmp(player.password, password) == 0){
+        printf("LOGIN BERHASIL. SELAMAT DATANG, %s!\n", player.username);
+    }
+    else{
+        printf("GAGAL LOGIN. User atau Password salah.\n");
+        printf("Petunjuk penggunaan CLA untuk login :\n");
+        printf("Program : ./nama_program\n");
+        printf("Argumen 1 : username\n");
+        printf("Argumen 2 : password\n");   
+    }
+}
+
 int main(int argc, char *argv[]){
     char *filename = "database/login.bin";
     if (argc == 1)
