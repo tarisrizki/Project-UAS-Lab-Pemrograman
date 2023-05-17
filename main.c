@@ -10,6 +10,18 @@ typedef struct
     char password[50];
 }pemain;
 
+// fungsi untuk registrasi
+void registrasi(char *filename){
+    pemain player;
+
+    printf("REGISTRASI PEMAIN\n");
+    printf("=========================================================\n\n");
+    printf("Username : ");
+    scanf("%s", player.username);
+    printf("Password : ");
+    scanf("%s", player.password);
+    exit(1);
+}
 int main(int argc, char *argv[]){
     char *filename = "database/login.bin";
     if (argc == 1)
