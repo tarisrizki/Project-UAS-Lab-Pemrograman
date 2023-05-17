@@ -82,6 +82,20 @@ void permainan(){
     strcpy(pertanyaan[0].pilihanD, "Bangkok");
     pertanyaan[0].jawaban = 'C';
     
+    strcpy(pertanyaan[1].soal, "Apakah nama bahasa pemrograman tertua dari pilihan berikut?");
+    strcpy(pertanyaan[1].pilihanA, "Python");
+    strcpy(pertanyaan[1].pilihanB, "Java");
+    strcpy(pertanyaan[1].pilihanC, "C");
+    strcpy(pertanyaan[1].pilihanD, "HTML");
+    pertanyaan[1].jawaban = 'C';
+    
+    strcpy(pertanyaan[2].soal, "Bendera negara manakah yang memiliki bintang terbesar dari semua bendera di dunia?");
+    strcpy(pertanyaan[2].pilihanA, "Republic Afrika Tengah");
+    strcpy(pertanyaan[2].pilihanB, "Yaman");
+    strcpy(pertanyaan[2].pilihanC, "Myanmar");
+    strcpy(pertanyaan[2].pilihanD, "Suriname");
+    pertanyaan[2].jawaban = 'C';
+    
 int main(int argc, char *argv[]){
     char *filename = "database/login.bin";
     if (argc == 1)
