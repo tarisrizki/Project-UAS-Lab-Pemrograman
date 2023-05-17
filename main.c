@@ -3,6 +3,13 @@
 #include <string.h>
 #include <ctype.h>
 
+// struct untuk data pemain
+typedef struct 
+{
+    char username[50];
+    char password[50];
+}pemain;
+
 int main(int argc, char *argv[]){
     char *filename = "database/login.bin";
     if (argc == 1)
