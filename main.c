@@ -37,6 +37,12 @@ void registrasi(char *filename){
     printf("=========================================================\n\n");
     exit(1);
 }
+void login(char *filename, char *username, char *password){
+    FILE *fpr = fopen(filename, "rb");
+    if(fpr == NULL){
+        printf("Gagal membuka file!");
+        exit(1);
+    }
 int main(int argc, char *argv[]){
     char *filename = "database/login.bin";
     if (argc == 1)
