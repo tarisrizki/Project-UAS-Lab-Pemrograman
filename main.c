@@ -131,9 +131,12 @@ void permainan(){
         }
 
         printf("=========================================================\n\n");
-    }
-
-    
+    }   
+    printf("Selamat anda berhasil menjawab %d/%d soal\n", (int) score, total_soal);
+    printf("Nilai anda adalah %.2f\n\n", score / (float) total_soal * 100);
+    exit(1);
+}
+   
 int main(int argc, char *argv[]){
     char *filename = "database/login.bin";
     if (argc == 1)
