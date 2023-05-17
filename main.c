@@ -47,5 +47,14 @@ int main(int argc, char *argv[]){
         printf("Untuk Login: ./Program username password\n\n");
         return EXIT_SUCCESS;
     }
+    else if (strcmp(argv[1], "registrasi") == 0){
+        registrasi(filename);
+    }
+    else if (argc == 3){
+        char *username = argv[1];
+        char *password = argv[2];
+        login(filename, username, password);
+        permainan();
+    }
     return 0;
 }
