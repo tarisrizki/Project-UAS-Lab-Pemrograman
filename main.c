@@ -156,5 +156,13 @@ int main(int argc, char *argv[]){
         login(filename, username, password);
         permainan();
     }
+    else if (argc != 3) {
+        printf("Argumen tidak valid, Petunjuk penggunaan CLA untuk login :\n");
+        printf("Program : ./nama_program\n");
+        printf("Argumen 1 : username\n");
+        printf("Argumen 2 : password\n");
+        return EXIT_SUCCESS;
+    }
     return 0;
 }
+
