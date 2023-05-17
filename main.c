@@ -110,6 +110,30 @@ void permainan(){
     strcpy(pertanyaan[4].pilihanD, "Bjarne Stroustrup");
     pertanyaan[4].jawaban = 'A';
     
+    float score = 0;
+    char jawaban_user;
+    for(int i=0 ; i < total_soal; i++){
+        printf("SOAL %d \n%s\n", (i+1), pertanyaan[i].soal);
+        printf("A) %s\n", pertanyaan[i].pilihanA);
+        printf("B) %s\n", pertanyaan[i].pilihanB);
+        printf("C) %s\n", pertanyaan[i].pilihanC);
+        printf("D) %s\n\n", pertanyaan[i].pilihanD);
+        printf("masukkan jawaban : (dengan A,B,C atau D)\n");
+
+        scanf(" %c", &jawaban_user);
+        if(toupper(jawaban_user) == pertanyaan[i].jawaban){
+            score++;
+            printf("jawaban anda benar!!!\n\n");
+        }
+        else{
+            printf("jawaban anda salah\n\n");
+            printf("jawaban yang benar %c\n\n", pertanyaan[i].jawaban);
+        }
+
+        printf("=========================================================\n\n");
+    }
+
+    
 int main(int argc, char *argv[]){
     char *filename = "database/login.bin";
     if (argc == 1)
