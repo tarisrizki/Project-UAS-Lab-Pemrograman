@@ -20,6 +20,21 @@ void registrasi(char *filename){
     scanf("%s", player.username);
     printf("Password : ");
     scanf("%s", player.password);
+    
+    FILE *fpw = fopen(filename, "wb");
+    if(fpw == NULL){
+        printf("Gagal membuka file!");
+        exit(1);
+    }
+
+    fwrite(&player, sizeof(player), 1, fpw);
+
+    fclose(fpw);
+
+    printf("=========================================================\n\n");
+    printf("Registrasi Berhasil!!!\n");
+    printf("Data pemain berhasil disimpan dalam database. Gunakan CLA untuk login\n");
+    printf("=========================================================\n\n");
     exit(1);
 }
 int main(int argc, char *argv[]){
